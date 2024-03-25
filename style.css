@@ -1,7 +1,7 @@
 @charset "UTF=8";
 
 header{background-color: #84CDD3;
-   width: 1440px;
+   width: 100%;
     display: flex;
     justify-content: space-between;
 
@@ -37,6 +37,7 @@ nav ul li a {
 
 
 main{background-image: url(images/haikei.png);
+   background-size: contain;
      background-repeat: repeat-y;}
 
 h2{font-family: 'Modak', system-ui;
@@ -50,7 +51,8 @@ h2{font-family: 'Modak', system-ui;
     position: relative;
     width: 1193px;
     height: 613px;
-    margin-left: 125px;
+    max-width: 1200px;
+    margin: 0 auto;
     background: #84CDD3;
     border-radius: 80px;
   }
@@ -86,7 +88,8 @@ p{font-family: "bokutoh-rera", sans-serif;
     position: relative;
     width: 1193px;
     height: 491px;
-    margin-left: 125px;
+    max-width: 1200px;
+    margin: 0 auto;
     background: #84CDD3;
     border-radius: 80px;
   }
@@ -95,7 +98,8 @@ p{font-family: "bokutoh-rera", sans-serif;
     position: relative;
     width: 1193px;
     height: 728px;
-    margin-left: 125px;
+    max-width: 1200px;
+    margin: 0 auto;
     background: #84CDD3;
     border-radius: 80px;
   }
@@ -155,9 +159,11 @@ flex-flow: column;}
     position: relative;
     width: 1193px;
     height:  579px;
-    margin-left: 125px;
+    max-width: 1200px;
+    margin: 0 auto;
     background: #84CDD3;
     border-radius: 80px;
+    margin-bottom: 30px;
   }
 
 .square4 img{
@@ -180,16 +186,20 @@ flex-flow: column;}
 
 .instagram{
     margin-top: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .instagram img{ 
-    margin-left: 620px;
+   
     margin-top: 7px;
     margin-bottom: 50px;
+    width:193px; height:46px;   
     
 }
 
     footer{
+        margin-top: 50px;
         color: #1E1E1E;
         text-align: center;
         background-color: #84CDD3;
@@ -197,3 +207,18 @@ flex-flow: column;}
         padding-top: 16px;
         padding-bottom: 16px;
     }
+
+    /*sp版
+-------------------------------*/
+@media only screen and (max-width: 768px){
+    .square3{
+        position: relative;
+        width: 600px;
+        height: 300px;
+        max-width: 300px;
+        margin: 0 auto;
+        background: #84CDD3;
+        border-radius: 80px;
+      }
+
+}
